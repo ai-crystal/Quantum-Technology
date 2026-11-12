@@ -67,7 +67,14 @@ md.inline.ruler.after('escape', 'math_inline', function (state, silent) {
     out = katex.renderToString(content, { displayMode: false, throwOnError: false, strict: 'ignore', output: 'html' });
   } catch (e) { return false; }
   const token = state.push('html_inline', '', 0);
-  token.content = out;
+  // 行内公式后紧跟的中文标点包进同一个不可换行元素，避免标点单独落到行首
+  let tail = '';
+  const nextCh = src[pos + 1];
+  if (nextCh && '。，、；：！？）”'.includes(nextCh)) {
+    tail = nextCh;
+    pos += 1;
+  }
+  token.content = '<span class="mwrap">' + out + tail + '</span>';
   state.pos = pos + 1;
   return true;
 });

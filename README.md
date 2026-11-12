@@ -20,6 +20,12 @@
 - [第三篇　器件与工程](book/chapters/ch18.md)
 - [附录 A　数学准备](book/appendix/appA.md)
 
+## 在线阅读
+
+仓库推送到 GitHub 后，在 Settings → Pages 选择 Deploy from a branch、分支 main、目录 / (root)，即可通过下方地址在线阅读：
+
+[https://dezeming.github.io/quantum-technologies/](https://dezeming.github.io/quantum-technologies/)
+
 ## 下载
 
 整书 PDF：[output/quantum-technologies.pdf](output/quantum-technologies.pdf)

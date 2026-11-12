@@ -437,6 +437,10 @@ li {
 }
 
 /* ---- 公式 ---- */
+.mwrap {
+  white-space: nowrap;
+}
+
 .katex {
   font-size: 1.08em;
 }
