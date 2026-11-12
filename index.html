@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <title>量子学技术 · 从光的直觉到量子机器</title>
+  <meta name="description" content="一本从光的实验讲到量子计算、量子通信与量子器件的书，作者 Dr. Dezeming。">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
+  <style>
+    :root {
+      --theme-color: #103257;
+      --sidebar-name-color: #103257;
+    }
+    body {
+      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
+    }
+    .sidebar, .markdown-section h1, .markdown-section h2, .markdown-section h3, .sidebar ul li a {
+      font-family: "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif;
+    }
+    .markdown-section {
+      max-width: 820px;
+      font-size: 16px;
+      line-height: 1.85;
+    }
+    .markdown-section img {
+      display: block;
+      margin: 1.2em auto 0.4em;
+      max-width: 100%;
+    }
+    .markdown-section p {
+      text-align: justify;
+    }
+    .sidebar ul li a {
+      font-size: 14px;
+    }
+    .sidebar-nav > ul > li > p > strong {
+      color: #103257;
+    }
+    .app-nav {
+      display: none;
+    }
+    section.cover {
+      background: linear-gradient(160deg, #071a33 0%, #103257 55%, #1d4f7a 100%);
+      background-size: cover;
+      background-position: center;
+    }
+    section.cover .mask {
+      background: rgba(5, 16, 34, 0.55) !important;
+    }
+    section.cover .cover-main {
+      position: relative;
+      z-index: 1;
+    }
+    section.cover .cover-main {
+      color: #ffffff;
+    }
+    section.cover .cover-main h1 {
+      color: #ffffff !important;
+      font-size: 3.2rem;
+      letter-spacing: 0.12em;
+      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
+    }
+    section.cover .cover-main h1 a,
+    section.cover .cover-main h1 a span {
+      color: #ffffff !important;
+      background: none !important;
+      border-bottom: none !important;
+    }
+    section.cover .cover-main p,
+    section.cover .cover-main p a {
+      color: #e8f0fb !important;
+    }
+    section.cover .cover-main blockquote {
+      border-left: none;
+    }
+    section.cover .cover-main blockquote p {
+      color: #cfe0f2 !important;
+      font-size: 0.95rem;
+    }
+    section.cover .cover-main > p:last-child a {
+      border-radius: 4px;
+      padding: 0.65em 1.6em;
+      border: 1px solid #ffffff;
+    }
+    section.cover .cover-main > p:last-child a:first-child {
+      background: #ffffff;
+      color: #103257;
+    }
+    section.cover .cover-main > p:last-child a:last-child {
+      background: transparent;
+      color: #ffffff;
+    }
+    section.cover .cover-main > p:last-child a:first-child {
+      background: #ffffff !important;
+      color: #103257 !important;
+    }
+    section.cover .cover-main > p:last-child a:last-child {
+      background: transparent !important;
+      color: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.85) !important;
+    }
+    .markdown-section table {
+      font-size: 14px;
+    }
+    .markdown-section blockquote {
+      border-left: 3px solid #7ba3ce;
+      background: #f4f7fb;
+      padding: 0.4em 1em;
+      color: #33414f;
+    }
+  </style>
+</head>
+<body>
+  <div id="app">加载中……</div>
+
+  <script>
+    window.$docsify = {
+      name: '量子学技术',
+      nameLink: '/',
+      loadSidebar: true,
+      coverpage: true,
+      subMaxLevel: 1,
+      homepage: 'README.md',
+      auto2top: true,
+      maxLevel: 3,
+      executeScript: true,
+      search: {
+        placeholder: '搜索全书',
+        noData: '没有找到相关内容',
+        depth: 3,
+        paths: 'auto'
+      },
+      pagination: {
+        previousText: '上一篇',
+        nextText: '下一篇',
+        crossChapter: true,
+        crossChapterText: true
+      },
+      copyCode: {
+        buttonText: '复制',
+        errorText: '复制失败',
+        successText: '已复制'
+      },
+      mermaid: {
+        theme: 'default'
+      }
+    };
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-katex@1/dist/docsify-katex.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.js"></script>
+</body>
+</html>
