@@ -2,147 +2,119 @@
 <html lang="zh-CN">
 <head>
   <meta charset="UTF-8">
-  <title>量子学技术 · 系列</title>
-  <meta name="description" content="一套讲量子技术的书：入门、实验基础、量子计算、器件、纠错、通信与网络。作者 Dr. Dezeming。">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>量子技术 · Dr. Dezeming</title>
+  <meta name="description" content="六册书，从黑体辐射到量子芯片">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify@4.13.1/themes/vue.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css">
   <style>
-    :root {
-      --theme-color: #103257;
-      --sidebar-name-color: #103257;
-    }
-    body {
-      font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", Georgia, serif;
-    }
-    .sidebar, .markdown-section h1, .markdown-section h2, .markdown-section h3, .sidebar ul li a {
-      font-family: "Noto Sans SC", "Microsoft YaHei", -apple-system, sans-serif;
-    }
-    .markdown-section {
-      max-width: 820px;
-      font-size: 16px;
-      line-height: 1.85;
-    }
-    .markdown-section img {
-      display: block;
-      margin: 1.2em auto 0.4em;
-      max-width: 100%;
-    }
-    .markdown-section p {
-      text-align: justify;
-    }
-    .sidebar ul li a {
-      font-size: 14px;
-    }
-    .sidebar-nav > ul > li > p > strong {
-      color: #103257;
-    }
-    .app-nav {
-      display: none;
-    }
-    .markdown-section table {
-      font-size: 14px;
-      display: table;
-      width: 100%;
-    }
-    .markdown-section blockquote {
-      border-left: 3px solid #7ba3ce;
-      background: #f4f7fb;
-      padding: 0.4em 1em;
-      color: #33414f;
-    }
-    section.cover {
-      background: linear-gradient(160deg, #071a33 0%, #103257 55%, #1d4f7a 100%);
-      background-size: cover;
-      background-position: center;
-    }
-    section.cover .mask {
-      background: rgba(5, 16, 34, 0.55) !important;
-    }
-    section.cover .cover-main {
-      position: relative;
-      z-index: 1;
-    }
-    section.cover .cover-main h1 {
-      color: #ffffff !important;
-      font-size: 3.2rem;
-      letter-spacing: 0.12em;
-      text-shadow: 0 4px 24px rgba(0, 0, 0, 0.45);
-    }
+    :root { --theme-color: #103257; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Microsoft YaHei", sans-serif; }
+    .sidebar { border-right: 1px solid #eee; }
+    .sidebar ul li a { font-size: 14px; }
+    .markdown-section { max-width: 860px; padding: 28px 36px 80px; line-height: 1.82; }
+    .markdown-section img { max-width: 100%; height: auto; display: block; margin: 1.2em auto; }
+    .markdown-section figcaption { text-align: center; color: #777; font-size: 13px; margin-top: -.4em; }
+    .markdown-section table { display: table; width: 100%; font-size: .95rem; }
+    .markdown-section blockquote { color: #4a5568; border-left: 3px solid var(--theme-color); background: #f7fafc; padding: .4em 1em; }
+    .app-nav { display: none; }
+    section.cover { background: radial-gradient(circle at 20% 18%, #23384c 0, #0b1119 48%, #05080d 100%) !important; }
+    section.cover .mask { background: rgba(0, 0, 0, .18) !important; }
+    section.cover .cover-main { max-width: 860px; }
+    section.cover .cover-main h1,
     section.cover .cover-main h1 a,
-    section.cover .cover-main h1 a span {
-      color: #ffffff !important;
-      background: none !important;
-      border-bottom: none !important;
-    }
-    section.cover .cover-main p,
-    section.cover .cover-main p a {
-      color: #e8f0fb !important;
-    }
-    section.cover .cover-main blockquote {
-      border-left: none;
-    }
-    section.cover .cover-main blockquote p {
-      color: #cfe0f2 !important;
-      font-size: 0.95rem;
-    }
-    section.cover .cover-main > p:last-child a {
-      border-radius: 4px;
-      padding: 0.6em 1.5em;
-      border: 1px solid #ffffff;
-    }
-    section.cover .cover-main > p:last-child a:first-child {
-      background: #ffffff !important;
-      color: #103257 !important;
-    }
-    section.cover .cover-main > p:last-child a:last-child {
-      background: transparent !important;
-      color: #ffffff !important;
-      border: 1px solid rgba(255, 255, 255, 0.85) !important;
+    section.cover .cover-main h1 a span { font-size: clamp(2.2rem, 7vw, 4.2rem); letter-spacing: .08em; color: #fff !important; text-decoration: none; }
+    section.cover .cover-main blockquote { border-left: none; background: none; }
+    section.cover .cover-main blockquote p { color: #d7e0ea !important; font-size: 1.05rem; }
+    section.cover .cover-main p { color: #b9c6d4 !important; }
+    section.cover .cover-main p strong { color: #eef4fa !important; }
+    section.cover .cover-main > p:last-child a { color: #fff !important; border: 1px solid rgba(255,255,255,.7) !important; background: transparent !important; }
+    section.cover .cover-main > p:last-child a:first-child { background: var(--theme-color) !important; border-color: var(--theme-color) !important; }
+    section.cover .cover-main > p:last-child a:hover { background: rgba(255,255,255,.14) !important; }
+    @media (max-width: 768px) {
+      .markdown-section { padding: 20px 18px 60px; }
     }
   </style>
 </head>
 <body>
   <div id="app">加载中……</div>
-
   <script>
     window.$docsify = {
-      name: '量子学技术',
-      nameLink: '/',
+      name: '量子技术',
+      repo: '',
+      homepage: 'README.md',
       loadSidebar: true,
       coverpage: true,
-      subMaxLevel: 1,
-      homepage: 'README.md',
-      auto2top: true,
+      relativePath: true,
+      subMaxLevel: 2,
       maxLevel: 3,
+      auto2top: true,
+      noCompileLinks: ['output/', '\\.pdf$'],
       search: {
         placeholder: '搜索全书',
-        noData: '没有找到相关内容',
-        depth: 3,
-        paths: 'auto'
+        noData: '没有找到内容。',
+        paths: 'auto',
+        depth: 3
       },
       pagination: {
-        previousText: '上一篇',
-        nextText: '下一篇',
+        previousText: '上一章',
+        nextText: '下一章',
         crossChapter: true,
-        crossChapterText: true
+        firstText: '回到开头',
+        lastText: '去往结尾'
       },
       copyCode: {
         buttonText: '复制',
         errorText: '复制失败',
         successText: '已复制'
       },
-      mermaid: {
-        theme: 'default'
-      }
+      mermaid: { theme: 'default' },
+      plugins: [
+        function (hook) {
+          hook.doneEach(function () {
+            var route = decodeURI(location.hash.replace(/^#\/?/, '').split('?')[0]);
+            if (!route || /\/$/.test(route)) { route += 'README.md'; }
+            var dir = route.replace(/[^\/]*$/, '');
+            function normalize(p) {
+              var stack = dir.split('/').filter(Boolean);
+              p.split('/').forEach(function (seg) {
+                if (seg === '..') { stack.pop(); }
+                else if (seg !== '.' && seg !== '') { stack.push(seg); }
+              });
+              return '/' + stack.join('/');
+            }
+            document.querySelectorAll('.markdown-section img').forEach(function (img) {
+              var src = img.getAttribute('src') || '';
+              if (src && !/^(https?:|\/|data:)/.test(src)) {
+                img.setAttribute('src', normalize(src));
+              }
+            });
+            if (window.renderMathInElement) {
+              window.renderMathInElement(document.querySelector('.markdown-section'), {
+                delimiters: [
+                  { left: '$$', right: '$$', display: true },
+                  { left: '\\[', right: '\\]', display: true },
+                  { left: '\\(', right: '\\)', display: false },
+                  { left: '$', right: '$', display: false }
+                ],
+                throwOnError: false,
+                ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+              });
+            }
+          });
+        }
+      ]
     };
   </script>
-
-  <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2/dist/docsify-pagination.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@2/dist/docsify-copy-code.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-katex@1/dist/docsify-katex.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2/dist/docsify-mermaid.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.5/dist/mermaid.min.js"></script>
+  <script>if (window.mermaid) { mermaid.initialize({ startOnLoad: false, theme: 'neutral' }); }</script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/docsify.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4.13.1/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-pagination@2.10.1/dist/docsify-pagination.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code@3.0.2/dist/docsify-copy-code.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-mermaid@2.0.1/dist/docsify-mermaid.js"></script>
 </body>
 </html>

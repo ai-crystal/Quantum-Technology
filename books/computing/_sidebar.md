@@ -10,7 +10,11 @@
 - [第 6 章 量子门与线路](/books/computing/chapters/ch06.md)
 - [第 7 章 量子算法](/books/computing/chapters/ch07.md)
 - [第 8 章 傅里叶变换与因式分解](/books/computing/chapters/ch08.md)
-- [第 9 章 近期路线与量子模拟](/books/computing/chapters/ch09.md)
+- [第 9 章 量子测量与态层析](/books/computing/chapters/ch09.md)
+- [第 10 章 线路编译与硬件映射](/books/computing/chapters/ch10.md)
+- [第 11 章 计算复杂度与量子优势的边界](/books/computing/chapters/ch11.md)
+- [第 12 章 算法设计的三种套路](/books/computing/chapters/ch12.md)
+- [第 13 章 近期路线与量子模拟](/books/computing/chapters/ch13.md)
 - [后记](/books/computing/front/epilogue.md)
 
 - [下载本册 PDF](/output/03-computing.pdf)

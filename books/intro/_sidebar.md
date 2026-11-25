@@ -16,7 +16,9 @@
 - **第三编 工程与判断**
   - [第 10 章 硬件平台全景](/books/intro/chapters/ch10.md)
   - [第 11 章 纠错与容错](/books/intro/chapters/ch11.md)
-  - [第 12 章 产业、路线图与怎么读新闻](/books/intro/chapters/ch12.md)
+  - [第 12 章 量子模拟与量子化学](/books/intro/chapters/ch12.md)
+  - [第 13 章 风险、治理与长期影响](/books/intro/chapters/ch13.md)
+  - [第 14 章 产业、路线图与怎么读新闻](/books/intro/chapters/ch14.md)
 - [后记](/books/intro/front/epilogue.md)
 
 - [下载本册 PDF](/output/01-intro.pdf)

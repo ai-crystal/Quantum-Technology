@@ -22,4 +22,6 @@
 - [第 9 章　量子精密测量](chapters/ch09.md)
 - [第 10 章　硬件平台全景](chapters/ch10.md)
 - [第 11 章　纠错与容错](chapters/ch11.md)
-- [第 12 章　产业、路线图与怎么读新闻](chapters/ch12.md)
+- [第 12 章　量子模拟与量子化学](chapters/ch12.md)
+- [第 13 章　风险、治理与长期影响](chapters/ch13.md)
+- [第 14 章　产业、路线图与怎么读新闻](chapters/ch14.md)

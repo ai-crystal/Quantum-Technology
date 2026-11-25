@@ -7,7 +7,11 @@
 - [第 3 章 真实设备的漏洞](/books/network/chapters/ch03.md)
 - [第 4 章 距离的墙](/books/network/chapters/ch04.md)
 - [第 5 章 量子网络](/books/network/chapters/ch05.md)
-- [第 6 章 后量子密码与迁移](/books/network/chapters/ch06.md)
+- [第 6 章 量子随机数与认证](/books/network/chapters/ch06.md)
+- [第 7 章 量子存储与中继器件](/books/network/chapters/ch07.md)
+- [第 8 章 纠缠分发与纯化](/books/network/chapters/ch08.md)
+- [第 9 章 网络协议与标准化](/books/network/chapters/ch09.md)
+- [第 10 章 后量子密码与迁移](/books/network/chapters/ch10.md)
 - [后记](/books/network/front/epilogue.md)
 
 - [下载本册 PDF](/output/06-network.pdf)

@@ -7,7 +7,11 @@
 - [第 3 章 表面码](/books/qec/chapters/ch03.md)
 - [第 4 章 逻辑门与魔法态](/books/qec/chapters/ch04.md)
 - [第 5 章 解码器与实时反馈](/books/qec/chapters/ch05.md)
-- [第 6 章 实验现状与开销](/books/qec/chapters/ch06.md)
+- [第 6 章 真实噪声长什么样](/books/qec/chapters/ch06.md)
+- [第 7 章 拓扑码与色彩码](/books/qec/chapters/ch07.md)
+- [第 8 章 玻色码与猫态](/books/qec/chapters/ch08.md)
+- [第 9 章 阈值、资源与架构](/books/qec/chapters/ch09.md)
+- [第 10 章 实验现状与开销](/books/qec/chapters/ch10.md)
 - [后记](/books/qec/front/epilogue.md)
 
 - [下载本册 PDF](/output/05-qec.pdf)

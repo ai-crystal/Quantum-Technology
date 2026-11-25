@@ -13,68 +13,97 @@ bs.use("qec")
 
 CH = "06"
 
+G1T = 1.0e-3  # 一个门时间里 Γ1·t
 
-def fig_progress():
-    d = np.array([3, 5])
-    p = np.array([3.03, 1.04]) / 100
-    lam = p[0] / p[1]
-    dd = np.linspace(3, 7, 100)
-    fit = p[0] * lam ** (-(dd - 3) / 2)
 
-    fig, ax = plt.subplots(figsize=(6.2, 3.1))
-    ax.semilogy(dd, fit, color=bs.BLUE, lw=1.4, ls=(0, (4, 2)))
-    ax.semilogy(d, p, "o", ms=6.5, mfc=bs.BLUE, mec="white", mew=1.1, zorder=4)
-    for x, y in zip(d, p):
-        ax.annotate(f"{100 * y:.2f}%", xy=(x, y), xytext=(6, 6), textcoords="offset points",
-                    fontsize=7.8, color="#33414f")
-    ax.set_xlabel("码距 $d$")
-    ax.set_ylabel("每周期逻辑错误率")
-    ax.set_xlim(2.6, 7.4)
-    ax.set_ylim(3e-3, 6e-2)
-    ax.set_xticks([3, 4, 5, 6, 7])
-    ax.set_yticks([3e-3, 1e-2, 3e-2, 6e-2])
-    ax.set_yticklabels(["0.3%", "1%", "3%", "6%"])
-    ax.minorticks_off()
-    ax.text(3.15, 4.3e-2,
-            f"每加 2 个码距，错误率降为 $1/{lam:.2f}$",
-            fontsize=7.8, color="#4a5563")
-    ax.text(4.05, 5.2e-3,
-            "2024 年的器件把这条线\n推到 $d=7$，抑制因子约 2.1",
-            fontsize=7.8, color="#6b7785")
-    bs.clean(ax, grid_axis="y")
+def fig_bias():
+    fig, axes = plt.subplots(1, 2, figsize=(7.2, 3.3),
+                             gridspec_kw={"width_ratios": [1.15, 1.0], "wspace": 0.28})
+
+    ax = axes[0]
+    x = np.logspace(-1.3, 1.5, 400)  # T1 / Tφ
+    p_xy = G1T / 4 * np.ones_like(x)
+    p_z = G1T / 4 + G1T * x / 2
+    ax.loglog(x, p_z, color=bs.RED, lw=1.6)
+    ax.loglog(x, p_xy, color=bs.BLUE, lw=1.6)
+    ax.text(0.07, 1.6e-3, "相位翻转 $Z$", fontsize=7.6, color=bs.RED)
+    ax.text(0.07, 1.9e-4, "比特翻转 $X$ 与 $Y$", fontsize=7.6, color=bs.BLUE)
+    ax.annotate("偏置很小", xy=(0.125, 9.8e-4), xytext=(0.058, 3.4e-3),
+                fontsize=7.4, color="#6b7785",
+                arrowprops=dict(arrowstyle="-|>", color="#9aa5b1", lw=0.8))
+    ax.annotate("偏置很大", xy=(9.0, 5.6e-3), xytext=(2.6, 1.6e-2),
+                fontsize=7.4, color="#6b7785",
+                arrowprops=dict(arrowstyle="-|>", color="#9aa5b1", lw=0.8))
+    ax.set_xlabel("$T_1/T_\\varphi$")
+    ax.set_ylabel("单次门内的错误概率")
+    ax.set_xlim(0.05, 32)
+    ax.set_ylim(1.3e-4, 4e-2)
+    bs.clean(ax, grid_axis="both")
+    ax.text(0.055, 2.6e-2, "(a)", fontsize=10, color=bs.INK)
+
+    ax = axes[1]
+    ratios = [0.1, 0.3, 1.0, 3.0, 10.0, 30.0]
+    px = np.array([G1T / 4] * len(ratios))
+    pz = np.array([G1T / 4 + G1T * r / 2 for r in ratios])
+    tot = 2 * px + pz
+    fx, fy, fz = px / tot, px / tot, pz / tot
+    xs = np.arange(len(ratios))
+    ax.bar(xs, fx, width=0.66, color=bs.BLUE, edgecolor="none", label="$X$")
+    ax.bar(xs, fy, bottom=fx, width=0.66, color="#9db4cc", edgecolor="none", label="$Y$")
+    ax.bar(xs, fz, bottom=fx + fy, width=0.66, color=bs.RED, edgecolor="none", label="$Z$")
+    for i, r in enumerate(ratios):
+        ax.text(i, 1.035, f"{1 + 2 * r:.0f}", fontsize=7.2, color="#4a5563", ha="center")
+    ax.set_xticks(xs)
+    ax.set_xticklabels(["0.1", "0.3", "1", "3", "10", "30"])
+    ax.set_xlabel("$T_1/T_\\varphi$")
+    ax.set_ylabel("三种错误所占的比例")
+    ax.set_ylim(0, 1.2)
+    ax.set_yticks([0, 0.5, 1.0])
+    ax.legend(loc="center left", bbox_to_anchor=(1.0, 0.5), fontsize=7.6,
+              handlelength=0.9, borderaxespad=0.1)
+    for s in ("top", "right"):
+        ax.spines[s].set_visible(False)
+    ax.text(-0.86, 1.16, "(b)", fontsize=10, color=bs.INK)
+
     bs.save(fig, CH, "fig01")
 
 
-def fig_overhead():
-    pth = 6e-3
-    p = np.logspace(-4, np.log10(2e-3), 400)
-    need = -11.0 / np.log10(p / pth)
-    d = 2 * np.ceil((need - 1) / 2) + 1
-    qubits = 2 * d ** 2 - 1
+def fig_erasure():
+    from matplotlib.lines import Line2D
 
-    fig, ax = plt.subplots(figsize=(6.2, 3.1))
-    ax.semilogx(p, d, color=bs.BLUE, lw=1.6)
-    ax.set_xlabel("物理错误率 $p$")
-    ax.set_ylabel("所需码距 $d$", color=bs.BLUE)
-    ax.set_ylim(0, 95)
-    ax.set_yticks([10, 20, 30, 50, 70, 90])
-    ax.axvline(1e-3, color=bs.RED, lw=0.9, ls=(0, (3, 2)))
-    ax.plot([1e-3], [27], "o", ms=5, color=bs.BLUE, zorder=5)
-    ax.annotate("$p=10^{-3}$ 时\n$d=27$，约 1400 个物理比特", xy=(1e-3, 27), xytext=(1.5e-4, 62),
-                fontsize=7.6, color="#33414f",
-                arrowprops=dict(arrowstyle="-", color="#8f9aa8", lw=0.8))
+    fig, ax = plt.subplots(figsize=(6.2, 3.5))
+    x = np.logspace(-3, np.log10(0.62), 500)
+    dep_cols = ["#a8bed6", "#6f93b8", bs.BLUE]
+    era_cols = ["#a9c7b4", "#6fa287", bs.GREEN]
+    for d, cd, ce in zip((3, 5, 7), dep_cols, era_cols):
+        k = (d + 1) / 2.0
+        ax.loglog(x, 0.1 * (x / 0.103) ** k, color=cd, lw=1.4)
+        ax.loglog(x, 0.1 * (x / 0.50) ** k, color=ce, lw=1.4, ls=(0, (5, 2.5)))
 
-    ax2 = ax.twinx()
-    ax2.semilogx(p, qubits, color=bs.GREEN, lw=1.3, ls=(0, (4, 2)))
-    ax2.set_ylabel("每个逻辑比特的物理比特数", color=bs.GREEN)
-    ax2.set_ylim(0, 5200)
-    ax2.set_yticks([1000, 2000, 3000, 4000, 5000])
-    ax2.spines["top"].set_visible(False)
-    ax.spines["top"].set_visible(False)
-    bs.clean(ax, grid_axis="y")
+    ax.axvline(0.103, color=bs.BLUE, lw=0.9, ls=(0, (2, 2.5)))
+    ax.axvline(0.50, color=bs.GREEN, lw=0.9, ls=(0, (2, 2.5)))
+    ax.text(0.113, 2.2e-9, "去极化阈值\n10.3%", fontsize=7.4, color=bs.BLUE, va="bottom")
+    ax.text(0.52, 2.2e-9, "擦除阈值\n50%", fontsize=7.4, color=bs.GREEN, va="bottom")
+
+    ax.axvline(0.01, color="#c2cad3", lw=0.8, ls=(0, (1.5, 2.5)))
+    ax.text(1.15e-2, 0.46, "1% 的物理错误", fontsize=7.4, color="#6b7785",
+            va="center")
+
+    handles = [Line2D([], [], color=bs.BLUE, lw=1.4),
+               Line2D([], [], color=bs.GREEN, lw=1.4, ls=(0, (5, 2.5)))]
+    ax.legend(handles, ["去极化，错误方向未知", "擦除，错误位置已知"],
+              loc="lower left", fontsize=7.4, handlelength=1.6,
+              borderpad=0.5, labelspacing=0.45, framealpha=0.92,
+              edgecolor="none")
+
+    ax.set_xlabel("每比特每轮的物理错误率")
+    ax.set_ylabel("每轮逻辑错误率 $p_L$")
+    ax.set_xlim(1e-3, 0.62)
+    ax.set_ylim(1e-9, 1.2)
+    bs.clean(ax, grid_axis="both")
     bs.save(fig, CH, "fig02")
 
 
 if __name__ == "__main__":
-    fig_progress()
-    fig_overhead()
+    fig_bias()
+    fig_erasure()

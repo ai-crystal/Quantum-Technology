@@ -10,7 +10,11 @@
 - [第 6 章 光子平台](/books/devices/chapters/ch06.md)
 - [第 7 章 测控与读出电子学](/books/devices/chapters/ch07.md)
 - [第 8 章 半导体与拓扑量子比特](/books/devices/chapters/ch08.md)
-- [第 9 章 规模化架构](/books/devices/chapters/ch09.md)
+- [第 9 章 稀释制冷与低温工程](/books/devices/chapters/ch09.md)
+- [第 10 章 超导薄膜工艺与材料](/books/devices/chapters/ch10.md)
+- [第 11 章 封装、屏蔽与干扰](/books/devices/chapters/ch11.md)
+- [第 12 章 激光、真空与光学工程](/books/devices/chapters/ch12.md)
+- [第 13 章 规模化架构](/books/devices/chapters/ch13.md)
 - [后记](/books/devices/front/epilogue.md)
 
 - [下载本册 PDF](/output/04-devices.pdf)

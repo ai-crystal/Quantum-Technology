@@ -8,12 +8,12 @@
 
 | 册 | 书名 | 副标题 | 篇幅 | 在线阅读 | 下载 |
 |---|---|---|---|---|---|
-| 第一册 | 量子技术入门 | 从黑体辐射到量子芯片 | 44 页 | [阅读](/books/intro/README.md) | [PDF](/output/01-intro.pdf) |
-| 第二册 | 量子力学与实验基础 | 从双缝到单光子 | 54 页 | [阅读](/books/foundations/README.md) | [PDF](/output/02-foundations.pdf) |
-| 第三册 | 量子计算与算法 | 从量子比特到因式分解 | 48 页 | [阅读](/books/computing/README.md) | [PDF](/output/03-computing.pdf) |
-| 第四册 | 量子器件与硬件平台 | 超导、离子、原子与光子 | 45 页 | [阅读](/books/devices/README.md) | [PDF](/output/04-devices.pdf) |
-| 第五册 | 量子纠错与容错 | 从重复码到表面码 | 33 页 | [阅读](/books/qec/README.md) | [PDF](/output/05-qec.pdf) |
-| 第六册 | 量子通信与量子网络 | 从 BB84 到量子互联网 | 32 页 | [阅读](/books/network/README.md) | [PDF](/output/06-network.pdf) |
+| 第一册 | 量子技术入门 | 从黑体辐射到量子芯片 | 50 页 | [阅读](/books/intro/README.md) | [PDF](/output/01-intro.pdf) |
+| 第二册 | 量子力学与实验基础 | 从双缝到单光子 | 74 页 | [阅读](/books/foundations/README.md) | [PDF](/output/02-foundations.pdf) |
+| 第三册 | 量子计算与算法 | 从量子比特到因式分解 | 71 页 | [阅读](/books/computing/README.md) | [PDF](/output/03-computing.pdf) |
+| 第四册 | 量子器件与硬件平台 | 超导、离子、原子与光子 | 66 页 | [阅读](/books/devices/README.md) | [PDF](/output/04-devices.pdf) |
+| 第五册 | 量子纠错与容错 | 从重复码到表面码 | 54 页 | [阅读](/books/qec/README.md) | [PDF](/output/05-qec.pdf) |
+| 第六册 | 量子通信与量子网络 | 从 BB84 到量子互联网 | 53 页 | [阅读](/books/network/README.md) | [PDF](/output/06-network.pdf) |
 
 ## 怎么读
 

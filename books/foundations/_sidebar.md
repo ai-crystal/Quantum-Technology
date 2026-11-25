@@ -11,7 +11,11 @@
 - [第 7 章 原子、能级与光谱](/books/foundations/chapters/ch07.md)
 - [第 8 章 激光](/books/foundations/chapters/ch08.md)
 - [第 9 章 单个光子](/books/foundations/chapters/ch09.md)
-- [第 10 章 从实验到形式体系](/books/foundations/chapters/ch10.md)
+- [第 10 章 电子自旋与斯特恩-格拉赫](/books/foundations/chapters/ch10.md)
+- [第 11 章 穿过不该穿过的墙](/books/foundations/chapters/ch11.md)
+- [第 12 章 全同粒子与统计](/books/foundations/chapters/ch12.md)
+- [第 13 章 测量问题与几种解释](/books/foundations/chapters/ch13.md)
+- [第 14 章 从实验到形式体系](/books/foundations/chapters/ch14.md)
 - [后记](/books/foundations/front/epilogue.md)
 
 - [下载本册 PDF](/output/02-foundations.pdf)
