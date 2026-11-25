@@ -1,0 +1,13 @@
+- [系列首页](/README.md)
+- [量子纠错与容错](/books/qec/README.md)
+
+- [前言](/books/qec/front/preface.md)
+- [第 1 章 量子纠错](/books/qec/chapters/ch01.md)
+- [第 2 章 稳定子与 CSS 码](/books/qec/chapters/ch02.md)
+- [第 3 章 表面码](/books/qec/chapters/ch03.md)
+- [第 4 章 逻辑门与魔法态](/books/qec/chapters/ch04.md)
+- [第 5 章 解码器与实时反馈](/books/qec/chapters/ch05.md)
+- [第 6 章 实验现状与开销](/books/qec/chapters/ch06.md)
+- [后记](/books/qec/front/epilogue.md)
+
+- [下载本册 PDF](/output/05-qec.pdf)

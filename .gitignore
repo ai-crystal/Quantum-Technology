@@ -1,6 +1,6 @@
 # 依赖与临时文件
-book/build/node_modules/
-book/build/.tmp/
+books/build/node_modules/
+books/build/.tmp/
 
 # 本地资料，不上传
 papers/

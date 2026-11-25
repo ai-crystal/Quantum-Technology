@@ -1,0 +1,558 @@
+/* ===== 打印样式：A4 书籍版式 ===== */
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Serif SC", "Source Han Serif SC", "Songti SC", "SimSun", serif;
+  font-size: 10.5pt;
+  line-height: 1.78;
+  color: #1a1a1a;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+
+p {
+  margin: 0 0 0.55em 0;
+  text-indent: 2em;
+  orphans: 2;
+  widows: 2;
+}
+
+strong {
+  font-weight: 700;
+  color: #0d2b4e;
+}
+
+em {
+  font-style: normal;
+  border-bottom: 1px solid #b9c9dc;
+}
+
+/* ---- 层次标题 ---- */
+h1 {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 21pt;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #103257;
+  margin: 0 0 1.1em 0;
+  padding-bottom: 0.35em;
+  border-bottom: 2px solid #103257;
+  page-break-before: always;
+  page-break-after: avoid;
+  text-align: left;
+}
+
+h2 {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 13.5pt;
+  font-weight: 700;
+  color: #14406e;
+  margin: 1.5em 0 0.6em 0;
+  page-break-after: avoid;
+  text-align: left;
+}
+
+h3 {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 11.5pt;
+  font-weight: 700;
+  color: #25507c;
+  margin: 1.1em 0 0.45em 0;
+  page-break-after: avoid;
+  text-align: left;
+}
+
+h4 {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #35597f;
+  margin: 0.9em 0 0.35em 0;
+  page-break-after: avoid;
+}
+
+/* ---- 图片与图题 ---- */
+img {
+  display: block;
+  max-width: 100%;
+  margin: 0.7em auto 0.2em auto;
+  page-break-inside: avoid;
+}
+
+p.fig-cap {
+  text-indent: 0;
+  text-align: center;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 9pt;
+  color: #4a4a4a;
+  margin: 0.1em 0 1.0em 0;
+  page-break-before: avoid;
+}
+
+/* ---- 表格 ---- */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 9pt;
+  margin: 0.8em 0 0.9em 0;
+  page-break-inside: avoid;
+}
+
+th, td {
+  border: 0.6pt solid #b8c4d2;
+  padding: 3pt 5pt;
+  text-align: left;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+th {
+  background: #eaeff6;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+}
+
+/* ---- 引文与要点框 ---- */
+blockquote {
+  margin: 0.8em 0;
+  padding: 0.55em 0.9em;
+  background: #f4f7fb;
+  border-left: 3px solid #7ba3ce;
+  page-break-inside: avoid;
+}
+
+blockquote p {
+  text-indent: 0;
+  margin: 0.25em 0;
+}
+
+/* ---- 代码 ---- */
+pre, code {
+  font-family: "Cascadia Mono", Consolas, "Courier New", monospace;
+}
+
+pre {
+  font-size: 8.6pt;
+  line-height: 1.45;
+  background: #f6f7f9;
+  border: 0.6pt solid #dde2e8;
+  border-radius: 3px;
+  padding: 7px 9px;
+  white-space: pre-wrap;
+  page-break-inside: avoid;
+  text-align: left;
+}
+
+code {
+  font-size: 9pt;
+  background: #f2f4f7;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+pre code {
+  background: none;
+  padding: 0;
+  font-size: inherit;
+}
+
+/* ---- 列表 ---- */
+ul, ol {
+  margin: 0.4em 0 0.7em 0;
+  padding-left: 1.6em;
+}
+
+li {
+  margin: 0.18em 0;
+  line-height: 1.7;
+}
+
+/* ---- 目录 ---- */
+.toc-page {
+  page-break-after: always;
+}
+
+.toc-page h1 {
+  border-bottom: 2px solid #103257;
+}
+
+.toc-l1, .toc-l2 {
+  display: flex;
+  align-items: baseline;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  line-height: 1.9;
+}
+
+.toc-l1 {
+  font-size: 10.5pt;
+  font-weight: 700;
+  color: #103257;
+  margin-top: 0.45em;
+}
+
+.toc-l2 {
+  font-size: 9.5pt;
+  color: #333;
+  padding-left: 1.8em;
+}
+
+.toc-dots {
+  flex: 1 1 auto;
+  border-bottom: 0.6pt dotted #9aa7b5;
+  margin: 0 5px 4px 5px;
+  min-width: 12px;
+}
+
+.toc-num {
+  flex: 0 0 auto;
+  font-weight: 400;
+  color: #444;
+  font-variant-numeric: tabular-nums;
+}
+
+.toc-part {
+  margin-top: 1.1em;
+  padding-top: 0.3em;
+  border-top: 0.6pt solid #cfd8e3;
+}
+
+/* ---- 封面 / 封底 ---- */
+.cover-page, .backcover-page {
+  page-break-after: always;
+  height: 240mm;
+  position: relative;
+  overflow: hidden;
+}
+
+.cover-art {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin: 0;
+}
+
+.cover-veil {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    linear-gradient(90deg, rgba(4, 12, 28, 0.74) 0%, rgba(4, 12, 28, 0.42) 46%, rgba(4, 12, 28, 0.08) 78%),
+    linear-gradient(180deg, rgba(4, 12, 28, 0.40) 0%, rgba(4, 12, 28, 0.22) 50%, rgba(4, 12, 28, 0.70) 100%);
+}
+
+.cover-text {
+  position: absolute;
+  left: 18mm;
+  right: 18mm;
+  top: 72mm;
+  color: #ffffff;
+}
+
+.cover-text .c-title {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 40pt;
+  font-weight: 700;
+  letter-spacing: 6pt;
+  line-height: 1.15;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.55);
+}
+
+.cover-text .c-sub {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 14pt;
+  font-weight: 400;
+  letter-spacing: 2pt;
+  margin: 8mm 0 0 0;
+  color: #e8f0fb;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+.cover-foot {
+  position: absolute;
+  left: 18mm;
+  right: 18mm;
+  bottom: 16mm;
+  color: #ffffff;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+}
+
+.cover-foot .c-author {
+  font-size: 13pt;
+  letter-spacing: 1.5pt;
+  margin: 0;
+}
+
+.cover-foot .c-note {
+  font-size: 9pt;
+  color: #cfdcee;
+  margin: 3mm 0 0 0;
+  letter-spacing: 0.6pt;
+}
+
+.backcover-page .back-text {
+  position: absolute;
+  left: 14mm;
+  right: 14mm;
+  bottom: 18mm;
+  background: rgba(6, 16, 34, 0.55);
+  color: #eef4fc;
+  padding: 7mm 8mm;
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 9.5pt;
+  line-height: 1.85;
+  text-align: left;
+}
+
+.backcover-page .back-text p {
+  text-indent: 0;
+  margin: 0 0 0.4em 0;
+}
+
+/* ---- 篇首页 ---- */
+.part-page {
+  page-break-before: always;
+  page-break-after: always;
+  height: 240mm;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 6mm;
+}
+
+.part-page .part-label {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 11pt;
+  letter-spacing: 4pt;
+  color: #6b88a8;
+  margin: 0 0 6mm 0;
+}
+
+.part-page h1.part-h1 {
+  page-break-before: auto;
+  border-bottom: none;
+  font-size: 30pt;
+  line-height: 1.3;
+  margin: 0;
+  padding: 0;
+  color: #0f2e52;
+}
+
+.part-page .part-rule {
+  width: 46mm;
+  height: 2.4pt;
+  background: #2b5c94;
+  margin: 8mm 0 8mm 0;
+}
+
+.part-page .part-lead {
+  font-size: 10.5pt;
+  color: #3d4b5c;
+  line-height: 1.9;
+  max-width: 118mm;
+  text-align: left;
+}
+
+.part-page .part-lead p {
+  text-indent: 0;
+  margin: 0 0 0.5em 0;
+}
+
+/* ---- 扉页 / 版权页 ---- */
+.title-page {
+  page-break-after: always;
+  text-align: center;
+  padding-top: 52mm;
+}
+
+.title-page .t-main {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 34pt;
+  font-weight: 700;
+  letter-spacing: 8pt;
+  color: #103257;
+  margin: 0;
+}
+
+.title-page .t-sub {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 13pt;
+  color: #3c5a7c;
+  letter-spacing: 2pt;
+  margin: 7mm 0 0 0;
+}
+
+.title-page .t-rule {
+  width: 60mm;
+  height: 1.6pt;
+  background: #2b5c94;
+  margin: 12mm auto;
+}
+
+.title-page .t-author {
+  font-size: 12pt;
+  color: #2a3b4e;
+  letter-spacing: 2pt;
+}
+
+.title-page .t-press {
+  margin-top: 62mm;
+  font-size: 9.5pt;
+  color: #5a6b7d;
+  letter-spacing: 1pt;
+}
+
+.copyright-page {
+  page-break-after: always;
+  padding-top: 30mm;
+  font-size: 9.5pt;
+  color: #333;
+}
+
+.copyright-page p {
+  text-indent: 0;
+  margin: 0 0 0.55em 0;
+}
+
+.copyright-page .cp-title {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 12pt;
+  font-weight: 700;
+  color: #103257;
+  margin-bottom: 1.2em;
+}
+
+.copyright-page .cp-block {
+  margin-top: 2.2em;
+  padding-top: 1em;
+  border-top: 0.6pt solid #ccd6e2;
+  color: #4a5a6b;
+  line-height: 1.9;
+}
+
+/* ---- 公式 ---- */
+.mwrap {
+  white-space: nowrap;
+}
+
+.katex {
+  font-size: 1.08em;
+}
+
+.katex-display .katex {
+  font-size: 1.32em;
+}
+
+.katex-display {
+  margin: 0.9em 0;
+  page-break-inside: avoid;
+}
+
+/* ---- 工具类 ---- */
+hr {
+  border: none;
+  border-top: 0.6pt solid #d5dce5;
+  margin: 1.2em 0;
+}
+
+.page-break {
+  page-break-after: always;
+}
+
+.nobreak {
+  page-break-inside: avoid;
+}
+
+.center {
+  text-align: center;
+  text-indent: 0;
+}
+
+.small {
+  font-size: 9pt;
+  color: #555;
+}
+
+
+/* ---- 封面文档（无页边距，整页出血） ---- */
+body.coverdoc .cover-page,
+body.coverdoc .backcover-page {
+  height: 297mm;
+  width: 210mm;
+}
+
+body.coverdoc .backcover-page {
+  page-break-after: auto;
+}
+
+body.coverdoc .cover-text {
+  top: 92mm;
+  left: 22mm;
+  right: 22mm;
+}
+
+body.coverdoc .cover-foot {
+  left: 22mm;
+  right: 22mm;
+  bottom: 22mm;
+}
+
+/* ---- 前言署名 ---- */
+.sign {
+  text-indent: 0;
+  text-align: right;
+  margin-top: 1.4em;
+  page-break-before: avoid;
+}
+
+.sign p {
+  text-indent: 0;
+  text-align: right;
+  margin: 0.1em 0;
+}
+
+/* ---- 系列封面版式 ---- */
+.cover-text .c-series {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 12pt;
+  letter-spacing: 8pt;
+  color: #dbe8f7;
+  margin: 0 0 7mm 0;
+  opacity: 0.9;
+}
+
+.cover-text .c-vol {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 11pt;
+  letter-spacing: 3pt;
+  color: #eaf2fb;
+  margin: 6mm 0 0 0;
+  padding: 1.2mm 0 1.2mm 0;
+  border-top: 0.8pt solid rgba(255, 255, 255, 0.55);
+  border-bottom: 0.8pt solid rgba(255, 255, 255, 0.55);
+  display: inline-block;
+}
+
+.title-page .t-series {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 12pt;
+  letter-spacing: 9pt;
+  color: #6b88a8;
+  margin: 0 0 10mm 0;
+}
+
+.title-page .t-vol {
+  font-family: "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  font-size: 10pt;
+  letter-spacing: 3pt;
+  color: #8a9ab0;
+  margin: 6mm 0 0 0;
+}

@@ -1,0 +1,60 @@
+{
+  "front": [
+    {
+      "file": "front/cover.md",
+      "kind": "cover"
+    },
+    {
+      "file": "front/titlepage.md",
+      "kind": "plain"
+    },
+    {
+      "file": "front/copyright.md",
+      "kind": "plain"
+    },
+    {
+      "file": "front/preface.md",
+      "kind": "plain"
+    }
+  ],
+  "parts": [
+    {
+      "file": "front/part1.md",
+      "chapters": [
+        "ch01",
+        "ch02",
+        "ch03",
+        "ch04"
+      ]
+    },
+    {
+      "file": "front/part2.md",
+      "chapters": [
+        "ch05",
+        "ch06",
+        "ch07",
+        "ch08",
+        "ch09"
+      ]
+    },
+    {
+      "file": "front/part3.md",
+      "chapters": [
+        "ch10",
+        "ch11",
+        "ch12"
+      ]
+    }
+  ],
+  "appendix": [],
+  "back": [
+    {
+      "file": "front/epilogue.md",
+      "kind": "plain"
+    },
+    {
+      "file": "front/backcover.md",
+      "kind": "backcover"
+    }
+  ]
+}
