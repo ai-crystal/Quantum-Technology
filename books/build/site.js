@@ -58,7 +58,7 @@ async function main() {
   fs.writeFileSync(path.join(ROOT, '_sidebar.md'), lines.join('\n') + '\n', 'utf8');
 
   // 首页
-  const rows = books.map((b) => `| ${b.meta.volume} | ${b.meta.title} | ${b.meta.subtitle} | ${b.pages ? b.pages + ' 页' : '待生成'} | [阅读](/books/${b.name}/README.md) | [PDF](/output/${b.meta.pdf}) |`);
+  const rows = books.map((b) => `| ${b.meta.volume} | ${b.meta.title} | ${b.meta.subtitle} | ${b.pages ? b.pages + ' 页' : '待生成'} | [阅读](books/${b.name}/README.md) | [PDF](output/${b.meta.pdf}) |`);
   const readme = `# 量子学技术
 
 > 一套讲量子技术的书　·　作者 Dr. Dezeming
@@ -70,6 +70,10 @@ async function main() {
 | 册 | 书名 | 副标题 | 篇幅 | 在线阅读 | 下载 |
 |---|---|---|---|---|---|
 ${rows.join('\n')}
+
+## 在线阅读
+
+站点部署在 GitHub Pages 上，打开 [https://ai-crystal.github.io/Quantum-Technology/](https://ai-crystal.github.io/Quantum-Technology/) 可以从封面进入，按册浏览并下载 PDF。
 
 ## 怎么读
 
@@ -96,7 +100,7 @@ ${b.meta.blurb || ''}
 ## 在线阅读
 
 - [从第 1 章开始](chapters/${first}.md)
-- [下载本册 PDF](/output/${b.meta.pdf})
+- [下载本册 PDF](../../output/${b.meta.pdf})
 
 ## 目录
 
