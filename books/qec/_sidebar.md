@@ -12,6 +12,11 @@
 - [第 8 章 玻色码与猫态](/books/qec/chapters/ch08.md)
 - [第 9 章 阈值、资源与架构](/books/qec/chapters/ch09.md)
 - [第 10 章 实验现状与开销](/books/qec/chapters/ch10.md)
+- [第 11 章 纠错码的边界](/books/qec/chapters/ch11.md)
+- [第 12 章 手术台前的时刻表](/books/qec/chapters/ch12.md)
+- [第 13 章 量子 LDPC 码](/books/qec/chapters/ch13.md)
+- [第 14 章 编译与解码的握手](/books/qec/chapters/ch14.md)
+- [第 15 章 一本错误账](/books/qec/chapters/ch15.md)
 - [后记](/books/qec/front/epilogue.md)
 
 - [下载本册 PDF](/output/05-qec.pdf)

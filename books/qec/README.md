@@ -21,3 +21,8 @@
 - [第 8 章　玻色码与猫态](chapters/ch08.md)
 - [第 9 章　阈值、资源与架构](chapters/ch09.md)
 - [第 10 章　实验现状与开销](chapters/ch10.md)
+- [第 11 章　纠错码的边界](chapters/ch11.md)
+- [第 12 章　手术台前的时刻表](chapters/ch12.md)
+- [第 13 章　量子 LDPC 码](chapters/ch13.md)
+- [第 14 章　编译与解码的握手](chapters/ch14.md)
+- [第 15 章　一本错误账](chapters/ch15.md)

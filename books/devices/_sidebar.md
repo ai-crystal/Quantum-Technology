@@ -15,6 +15,12 @@
 - [第 11 章 封装、屏蔽与干扰](/books/devices/chapters/ch11.md)
 - [第 12 章 激光、真空与光学工程](/books/devices/chapters/ch12.md)
 - [第 13 章 规模化架构](/books/devices/chapters/ch13.md)
+- [第 14 章 超导比特的家族](/books/devices/chapters/ch14.md)
+- [第 15 章 中性原子与里德堡阵列的工程](/books/devices/chapters/ch15.md)
+- [第 16 章 集成光子工艺与封装](/books/devices/chapters/ch16.md)
+- [第 17 章 半导体量子点的材料与工艺](/books/devices/chapters/ch17.md)
+- [第 18 章 拓扑器件的实验现状](/books/devices/chapters/ch18.md)
+- [第 19 章 低温电子学与自动化标定](/books/devices/chapters/ch19.md)
 - [后记](/books/devices/front/epilogue.md)
 
 - [下载本册 PDF](/output/04-devices.pdf)

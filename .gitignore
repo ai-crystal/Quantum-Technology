@@ -11,3 +11,7 @@ Thumbs.db
 desktop.ini
 .DS_Store
 *.log
+
+# Python 缓存
+__pycache__/
+*.pyc

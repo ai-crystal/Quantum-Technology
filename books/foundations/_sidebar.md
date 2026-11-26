@@ -16,6 +16,12 @@
 - [第 12 章 全同粒子与统计](/books/foundations/chapters/ch12.md)
 - [第 13 章 测量问题与几种解释](/books/foundations/chapters/ch13.md)
 - [第 14 章 从实验到形式体系](/books/foundations/chapters/ch14.md)
+- [第 15 章 波包、群速度与色散](/books/foundations/chapters/ch15.md)
+- [第 16 章 势阱、周期势与能带的起源](/books/foundations/chapters/ch16.md)
+- [第 17 章 光与原子的相互作用](/books/foundations/chapters/ch17.md)
+- [第 18 章 相干性与干涉仪](/books/foundations/chapters/ch18.md)
+- [第 19 章 量子跳跃与单系统观测](/books/foundations/chapters/ch19.md)
+- [第 20 章 宏观量子现象](/books/foundations/chapters/ch20.md)
 - [后记](/books/foundations/front/epilogue.md)
 
 - [下载本册 PDF](/output/02-foundations.pdf)

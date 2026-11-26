@@ -15,6 +15,12 @@
 - [第 11 章 计算复杂度与量子优势的边界](/books/computing/chapters/ch11.md)
 - [第 12 章 算法设计的三种套路](/books/computing/chapters/ch12.md)
 - [第 13 章 近期路线与量子模拟](/books/computing/chapters/ch13.md)
+- [第 14 章 张量网络与经典模拟](/books/computing/chapters/ch14.md)
+- [第 15 章 量子模拟的算法](/books/computing/chapters/ch15.md)
+- [第 16 章 量子化学的算法路线](/books/computing/chapters/ch16.md)
+- [第 17 章 量子优化与退火](/books/computing/chapters/ch17.md)
+- [第 18 章 量子机器学习的证据与争议](/books/computing/chapters/ch18.md)
+- [第 19 章 编程工具链与云端](/books/computing/chapters/ch19.md)
 - [后记](/books/computing/front/epilogue.md)
 
 - [下载本册 PDF](/output/03-computing.pdf)

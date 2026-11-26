@@ -25,3 +25,7 @@
 - [第 12 章　量子模拟与量子化学](chapters/ch12.md)
 - [第 13 章　风险、治理与长期影响](chapters/ch13.md)
 - [第 14 章　产业、路线图与怎么读新闻](chapters/ch14.md)
+- [第 15 章　量子算法速览](chapters/ch15.md)
+- [第 16 章　造一台量子计算机需要什么](chapters/ch16.md)
+- [第 17 章　工程化的七道关口](chapters/ch17.md)
+- [第 18 章　结语与耐心](chapters/ch18.md)
