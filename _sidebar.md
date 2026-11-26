@@ -20,7 +20,7 @@
   - [第 16 章　造一台量子计算机需要什么](/books/intro/chapters/ch16.md)
   - [第 17 章　工程化的七道关口](/books/intro/chapters/ch17.md)
   - [第 18 章　结语与耐心](/books/intro/chapters/ch18.md)
-  - [下载 PDF](/output/01-intro.pdf)
+  - [下载 PDF](/output/v1-intro.pdf)
 - **第二册 量子力学与实验基础**
   - [本册首页](/books/foundations/README.md)
   - [第 1 章　光是什么](/books/foundations/chapters/ch01.md)
@@ -43,7 +43,7 @@
   - [第 18 章　相干性与干涉仪](/books/foundations/chapters/ch18.md)
   - [第 19 章　量子跳跃与单系统观测](/books/foundations/chapters/ch19.md)
   - [第 20 章　宏观量子现象](/books/foundations/chapters/ch20.md)
-  - [下载 PDF](/output/02-foundations.pdf)
+  - [下载 PDF](/output/v2-foundations.pdf)
 - **第三册 量子计算与算法**
   - [本册首页](/books/computing/README.md)
   - [第 1 章　量子比特](/books/computing/chapters/ch01.md)
@@ -65,7 +65,7 @@
   - [第 17 章　量子优化与退火](/books/computing/chapters/ch17.md)
   - [第 18 章　量子机器学习的证据与争议](/books/computing/chapters/ch18.md)
   - [第 19 章　编程工具链与云端](/books/computing/chapters/ch19.md)
-  - [下载 PDF](/output/03-computing.pdf)
+  - [下载 PDF](/output/v3-computing.pdf)
 - **第四册 量子器件与硬件平台**
   - [本册首页](/books/devices/README.md)
   - [第 1 章　光的量子态](/books/devices/chapters/ch01.md)
@@ -87,7 +87,7 @@
   - [第 17 章　半导体量子点的材料与工艺](/books/devices/chapters/ch17.md)
   - [第 18 章　拓扑器件的实验现状](/books/devices/chapters/ch18.md)
   - [第 19 章　低温电子学与自动化标定](/books/devices/chapters/ch19.md)
-  - [下载 PDF](/output/04-devices.pdf)
+  - [下载 PDF](/output/v4-devices.pdf)
 - **第五册 量子纠错与容错**
   - [本册首页](/books/qec/README.md)
   - [第 1 章　量子纠错](/books/qec/chapters/ch01.md)
@@ -105,7 +105,7 @@
   - [第 13 章　量子 LDPC 码](/books/qec/chapters/ch13.md)
   - [第 14 章　编译与解码的握手](/books/qec/chapters/ch14.md)
   - [第 15 章　一本错误账](/books/qec/chapters/ch15.md)
-  - [下载 PDF](/output/05-qec.pdf)
+  - [下载 PDF](/output/v5-qec.pdf)
 - **第六册 量子通信与量子网络**
   - [本册首页](/books/network/README.md)
   - [第 1 章　密钥为什么难分发](/books/network/chapters/ch01.md)
@@ -123,4 +123,4 @@
   - [第 13 章　卫星与自由空间链路预算](/books/network/chapters/ch13.md)
   - [第 14 章　设备无关与半设备无关协议](/books/network/chapters/ch14.md)
   - [第 15 章　网络之上能跑什么](/books/network/chapters/ch15.md)
-  - [下载 PDF](/output/06-network.pdf)
+  - [下载 PDF](/output/v6-network.pdf)

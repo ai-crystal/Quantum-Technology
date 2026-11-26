@@ -19,4 +19,4 @@
 - [第 15 章 网络之上能跑什么](/books/network/chapters/ch15.md)
 - [后记](/books/network/front/epilogue.md)
 
-- [下载本册 PDF](/output/06-network.pdf)
+- [下载本册 PDF](/output/v6-network.pdf)

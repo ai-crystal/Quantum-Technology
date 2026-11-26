@@ -24,4 +24,4 @@
 - [第 20 章 宏观量子现象](/books/foundations/chapters/ch20.md)
 - [后记](/books/foundations/front/epilogue.md)
 
-- [下载本册 PDF](/output/02-foundations.pdf)
+- [下载本册 PDF](/output/v2-foundations.pdf)

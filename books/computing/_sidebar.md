@@ -23,4 +23,4 @@
 - [第 19 章 编程工具链与云端](/books/computing/chapters/ch19.md)
 - [后记](/books/computing/front/epilogue.md)
 
-- [下载本册 PDF](/output/03-computing.pdf)
+- [下载本册 PDF](/output/v3-computing.pdf)

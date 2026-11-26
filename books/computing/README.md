@@ -7,7 +7,7 @@
 ## 在线阅读
 
 - [从第 1 章开始](chapters/ch01.md)
-- [下载本册 PDF](../../output/03-computing.pdf)
+- [下载本册 PDF](../../output/v3-computing.pdf)
 
 ## 目录
 

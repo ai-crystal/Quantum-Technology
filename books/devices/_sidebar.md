@@ -23,4 +23,4 @@
 - [第 19 章 低温电子学与自动化标定](/books/devices/chapters/ch19.md)
 - [后记](/books/devices/front/epilogue.md)
 
-- [下载本册 PDF](/output/04-devices.pdf)
+- [下载本册 PDF](/output/v4-devices.pdf)

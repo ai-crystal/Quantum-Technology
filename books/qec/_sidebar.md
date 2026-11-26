@@ -19,4 +19,4 @@
 - [第 15 章 一本错误账](/books/qec/chapters/ch15.md)
 - [后记](/books/qec/front/epilogue.md)
 
-- [下载本册 PDF](/output/05-qec.pdf)
+- [下载本册 PDF](/output/v5-qec.pdf)

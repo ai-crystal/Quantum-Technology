@@ -25,4 +25,4 @@
   - [第 18 章 结语与耐心](/books/intro/chapters/ch18.md)
 - [后记](/books/intro/front/epilogue.md)
 
-- [下载本册 PDF](/output/01-intro.pdf)
+- [下载本册 PDF](/output/v1-intro.pdf)
